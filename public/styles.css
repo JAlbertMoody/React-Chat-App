@@ -231,6 +231,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .Login-Container > h1 {
@@ -259,11 +260,44 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -10;
+    z-index: 1;
 }
 
 .Login-Img > Img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 927px) {
+    .Header {
+        width: 100vw;
+    }
+
+    .ChatRoom {
+        width: 100vw;
+    }
+
+    .Submit {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .Header {
+        width: 100vw;
+    }
+
+    .ChatRoom {
+        width: 100vw;
+    }
+
+    .Submit {
+        width: 100vw;
+    }
+
+    .Login-Img {
+        width: 100vw;
+        height: 100vw;
+    }
 }
