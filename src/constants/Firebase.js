@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-    // your credentials go here
+    // your config
 };
 
 const Firebase = initializeApp(firebaseConfig);

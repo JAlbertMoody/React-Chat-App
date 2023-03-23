@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { serverTimestamp, addDoc, collection } from "firebase/firestore"
+import img from "../svg/send-plane-fill (1).svg"
 
 function ChatSubmit({ db, dbcollection, user }){
     
@@ -26,8 +27,16 @@ function ChatSubmit({ db, dbcollection, user }){
     return (
         <div className="Submit">
             <form onSubmit={sendMessage} className="Form">
-                <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Send a message" />
-                <button type="submit" className="Form-Submit" disabled={!formValue}>Send</button>
+                <textarea value={formValue}
+                    onChange={(e) => setFormValue(e.target.value)} 
+                    placeholder="Send a message (max characters = 280)"
+                    maxLength={280}
+                    />
+                <button type="submit" 
+                    className="Form-Submit" 
+                    disabled={!formValue}>
+                        <img src={img} alt="send icon" />
+                </button>
             </form>
         </div>
     )

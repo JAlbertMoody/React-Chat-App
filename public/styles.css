@@ -4,6 +4,7 @@
 --salmon-pink: #FF919Eff;
 --atomic-tangerine-2: #FF9D75ff;
 --sky-blue: #74C0DCff;
+-honeydew: #d4ead8
 
 $atomic-tangerine: rgba(254, 177, 132, 1);
 $salmon-pink: rgba(255, 145, 158, 1);
@@ -27,7 +28,7 @@ body {
     color: #1E202Bff;
     background-color: white;
     max-height: 100vh;
-    background-color: #daf1fa;
+    background: linear-gradient(165deg, #74C0DCff, rgb(75, 183, 223));
 }
 
 .Header {
@@ -41,7 +42,47 @@ body {
     padding: 10px;
     background-color: white;
     border-bottom: 2px solid rgb(209, 209, 209);
-    color: #ff9d75;
+    color: #252525;
+    backdrop-filter: blur(10px);
+    opacity: 0.88;
+}
+
+.Header--Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header--Img {
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+}
+
+.Header--Img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Header--Logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header--Logout > button {
+    background-color: #ff9d75;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.Header--Logout > button:hover {
+    cursor: pointer;
+    background-color: #FEB184ff;
 }
 
 .ChatRoom {
@@ -53,6 +94,8 @@ body {
     flex-direction: column;
     background-color: white;
     border-top: none;
+    backdrop-filter: blur(10px);
+    opacity: 0.88;
 }
 
 .Submit {
@@ -61,23 +104,39 @@ body {
     padding: 10px;
     background-color: white;
     border-top: solid rgb(209, 209, 209);
+    backdrop-filter: blur(10px);
+    opacity: 0.88;
 }
 
 .Form {
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
-.Form > input {
+.Form > textarea {
     height: 100%;
     width: 85%;
     overflow: hidden;
     resize: none;
+    font-size: 1.2rem;
+    border-radius: 6px;
 }
 
 .Form > button {
     height: 100%;
     width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9d75;
+    border-radius: 6px;
+    border: none;
+}
+
+.Form > button:disabled {
+    background-color: rgb(233, 233, 233);
+
 }
 
 .Feed {
@@ -85,6 +144,7 @@ body {
     width: 100%;
     padding: 10px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .Message-Sent {
@@ -141,6 +201,12 @@ body {
     border-radius: 10px;
 }
 
+.Message-Text > p {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 .Message-Name{
     margin: 0px;
     font-size: 12px;
@@ -150,4 +216,54 @@ body {
     margin: 0px;
     margin: 2px;
     font-size: 18px;
+}
+
+.Login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login-Container > h1 {
+    margin: 10px;
+    font-size: 2.2rem;
+}
+
+.sign-in {
+    background-color: #74C0DCff;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.sign-in:hover {
+    cursor: pointer;
+    background-color: rgb(75, 183, 223);
+}
+
+.Login-Img {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+.Login-Img > Img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
