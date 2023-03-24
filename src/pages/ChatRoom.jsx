@@ -8,7 +8,7 @@ const ChatFeed = lazy(() => import('./ChatFeed'))
 
 function ChatRoom(){
     const db = getFirestore(Firebase);
-    const dbcollection = 'messages';
+    const dbcollection = 'demo';
     const { user } = useContext(AuthContext);
 
     return (

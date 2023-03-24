@@ -23,7 +23,7 @@ function Login(){
                 />
             </div>
             <div className="Login-Container">
-                <h1>HossBeans</h1>
+                <h1>React Chat</h1>
                 <button className="sign-in" 
                     onClick={signInWithGoogle}>
                         Sign in with Google

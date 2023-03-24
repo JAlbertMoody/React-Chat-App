@@ -25,7 +25,7 @@ function Header(){
     return (
         <div className="Header">
             <div className="Header--Container">
-                {screenWidth > 767 ? <h1>HossBeans</h1> : null}
+                {screenWidth > 767 ? <h1>React Chat</h1> : null}
                 <div className="Header--Img">
                     <img src={img} alt="HossBeans Logo" />
                 </div>
