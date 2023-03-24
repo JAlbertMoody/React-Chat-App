@@ -1,4 +1,4 @@
-import React, { lazy, Suspense} from 'react';
+import React, { lazy } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import * as ROUTES from './constants/Routes'
