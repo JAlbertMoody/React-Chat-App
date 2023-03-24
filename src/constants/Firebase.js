@@ -7,6 +7,7 @@ const BUCKET = process.env.REACT_APP_BUCKET;
 const SENDER = process.env.REACT_APP_SENDER_ID;
 const ID = process.env.REACT_APP_APP_ID
 
+
 const firebaseConfig = {
   apiKey: APIKEY,
   authDomain: AUTH,

@@ -147,6 +147,12 @@ body {
     overflow-x: hidden;
 }
 
+.ChatFeed-Fallback {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
 .Message-Sent {
     max-width: 80%;
     margin: 0px;

@@ -10,7 +10,6 @@ const Login = lazy(() => import('./pages/Login'))
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<p></p>} >
         <Routes>
           <Route element={<ProtectedRoute />} >
             <Route path={ROUTES.MAIN} element={<Layout />} >
@@ -19,7 +18,6 @@ function App() {
           </Route>
           <Route path={ROUTES.LOGIN} element={<Login />} />
         </Routes>
-      </Suspense>
     </BrowserRouter>
   );
 }
