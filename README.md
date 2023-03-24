@@ -4,7 +4,7 @@ This is a single page chat application built using ReactJS for the framework and
 
 ## Live Demo
 
-You can check out a live demo of the chat application by visiting this link. 
+You can check out a live demo of the chat application by visiting this [link](https://react-chat-demo.netlify.app/). 
 
 Here's a screenshot of what the login and chat interface looks like:
 
