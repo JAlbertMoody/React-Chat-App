@@ -8,7 +8,10 @@ You can check out a live demo of the chat application by visiting this [link](ht
 
 Here's a screenshot of what the login and chat interface looks like:
 
-[insert screenshot here]
+<div>
+    <img src="https://user-images.githubusercontent.com/85460733/227397803-cecdb312-ddc9-4ae1-9739-4866cf02a651.jpg" height="500" >
+    <img src="https://user-images.githubusercontent.com/85460733/227397590-294b9a77-f294-494e-b41a-53c7be7b8c33.jpg" height="500">
+</div>
 
 ## How to Download and Use the Repository
 
