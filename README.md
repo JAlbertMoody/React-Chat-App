@@ -17,10 +17,10 @@ Here's a screenshot of what the login and chat interface looks like:
 
 If you want to download and use the code for this chat application, here are the steps you should follow:
 
-1. Clone the repository to your local machine using Git or your preferred method.  
-2. Navigate to the root directory of the repository.  
-3. Run npm install to install all the required dependencies.  
+1. Clone the repository using '$ git clone https://github.com/JAlbertMoody/React-Chat-App'.  
+2. Navigate to the root directory of the repository '$ cd React-Chat-App'.  
+3. Run '$ npm install' to install all the required dependencies.  
 4. Create a Firebase project and enable Firebase Authentication and Firestore.  
-5. Add your Firebase project credentials to the src/firebase.js file.  
-6. Run npm start to start the development server.  
+5. Add your Firebase project credentials to the 'src/constants/firebase.js' file.  
+6. Run '$ npm start' to start the development server.  
 
